@@ -1,0 +1,197 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Vinay Invitation</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style>
+		.container {
+			font-family: initial;
+
+			font-style: italic;
+			font-weight: bolder !important;
+			color: #ffffff;
+			background: #a73737;
+			/* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #7a2828, #a73737);
+			/* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #7a2828, #a73737);
+			/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+			background-size: cover;
+			padding-left: 0px;
+			margin-top: 50px;
+
+		}
+
+		.map {
+			color: #31ff00;
+			text-decoration: none;
+			font-size: 20px;
+		}
+
+		text {
+			color: red;
+		}
+
+		div {
+			margin-top: 5px;
+		}
+
+		p {
+			padding-top: 15px;
+			font-size: 16px;
+		}
+
+		.comingSoon {
+			text-align: center;
+		}
+
+		.countDown {
+			text-align: center;
+		}
+
+		.countDown {
+			font-size: 18px;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			text-align: center;
+		}
+
+		.countDown div {
+			padding: 20px;
+			border: 1px solid #ffffff;
+			border-radius: 50%;
+
+			margin: 5px;
+			opacity: 1;
+
+		}
+
+		.img1 {
+			opacity: 0.2;
+			position: absolute;
+		}
+
+		.img2 {
+			opacity: 1;
+
+		}
+
+		.countDown span {
+			display: block;
+			font-size: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class=" col-lg-12 col-sm-12 col-xs-12 container" style="width:900px;height:550px;">
+		<img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmMnPH0BBn_n_v8srGo69ymvKj9pFFMMjU6rFEkuvOZ1NTgN7VYw" style="width:900px;height:550px;opacity:0.3"/>
+		<img class="img1" src="https://data.whicdn.com/images/281117135/original.gif" style="width:900px;height:550px;"/>
+		<div style="text-align:center;">
+			<p>It gives us immense pleasure to invite you & your family<br>for the wedding of </p>
+		</div>
+
+		<div style="display:flex;">
+			<div class="col-lg-3 " style="width: 235px;">
+				<div style="width:235px;height:100px"></div>
+			</div>
+			<div class="col-lg-6" style="width: 415px;">
+				<div style="text-align:center;">
+					<h1 style="color:#ffff00">Vinayak Bhustalimath</h1>
+				</div>
+				<div style="text-align:center;">
+					<h3>With</h3>
+				</div>
+				<div style="text-align:center;">
+					<h1 style="color:#ffff00">Rajeshwari Hiremath</h1>
+				</div>
+			</div>
+			<div class="col-lg-3" style="width: 235px;">
+				<img class="img2" src="https://i.pinimg.com/originals/4b/59/3f/4b593f1d06866809cc28bbef1df5a488.png" style="width:100px;height:100px;" alt=""></div>
+
+			</div>
+			<div style="display:flex;">
+				<div class="col-lg-3" style="text-align:center;">
+					<p> <span style="color:yellow">Venue: </span><br>Shri Amma Maheshwary Kalyana Mantap <br>
+						<b style="color:yellow">Navali Road, Karatagi,</b><br>Koppal Dist - 560078<br>
+						<div class="map"
+							onclick="window.open('https://goo.gl/maps/crJ7BZiHX6RqTaXNA','_blank','height=500,width=500,top=400,left=400')">
+							<img width="33px" style="cursor:pointer" src="https://icon-library.com/images/google-maps-location-icon/google-maps-location-icon-17.jpg" alt=""></div>
+					</p>
+				</div>
+				<div class="col-lg-6" style="text-align:center;">
+					<p>On Friday , 24<sup>th</sup> June 2022</p>
+					<div>
+						<p class="comingSoon">CountDown to Wedding Muhurtham</p>
+						<div class="countDown" style="text-align:center;">
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3" style="text-align:center;">
+					<p><span style="color:yellow">Muhurtham</span>
+						<br>8:20 - 9:20 AM<br><span style="color:yellow"> 
+							<br><span style="color:yellow">Lunch
+								<br>12:30 PM Onwards <br><span style="color:yellow"></span></p>
+				</div>
+			</div>
+
+			<div style="text-align:center;">
+				<p>Please join us on this memorable occassion to shower your blessings ,</p>
+				<h3 style="color:#41ea09;margin-top: 12px;font-style:italic">With Best Compliments from Bhustalimath and Family  <span style='font-size:24px;'></span>
+</h3>
+			</div>
+		</div>
+		<script>
+			const countDown = document.querySelector(".countDown");
+          const comingSoon = document.querySelector(".comingSoon");
+          
+          //setting date
+          const launchDate = new Date('June 24,2022 08:20:00').getTime();
+          
+          const intv1 = setInterval(() => {
+          
+              const nowDate = new Date().getTime();
+          
+              const distance = launchDate - nowDate;
+          
+              //time calculations
+          
+              const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              const min = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              const seconds = Math.floor((distance % (1000 * 60)) / (1000));
+          
+              //dispaly countdown
+              countDown.innerHTML = `<div>${days} <span>Days &nbsp;</span></div><div>${hours} <span>Hours</span></div><div>${min} <span>Mins &nbsp;</span></div><div>${seconds} <span>Secs &nbsp;</span></div>
+              `;
+          
+              if (distance < 0) {
+                  //stop countdown
+                  clearInterval(intv1);
+          
+                  //styling
+          
+                  
+                  countDown.style.fontSize ='3.2em';
+                  countDown.style.display='block';
+                  countDown.innerHTML= `
+                      <h2>Welcome to Wedding</h2>
+                  `
+                  ;
+                  comingSoon.style.display = 'none';
+              }
+          
+          }, 1000)
+		</script>
+</body>
+
+</html>
