@@ -187,8 +187,10 @@
           
               if (distance < 0) {
                   //stop countdown
-                  clearInterval(intv1);
-          
+//dispaly countdown
+              countDown.innerHTML = `<div>${days} <span>Days &nbsp;</span></div><div>${hours} <span>Hours</span></div><div>${min} <span>Mins &nbsp;</span></div><div>${seconds} <span>Secs &nbsp;</span></div>
+              `;
+                        
                   //styling
           
                   
